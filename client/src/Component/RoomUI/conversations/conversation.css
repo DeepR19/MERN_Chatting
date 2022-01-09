@@ -1,0 +1,53 @@
+.sideChat section .conversation:hover{
+  background: #177ec2b4;
+} 
+.sideChat section .conversation:hover .username{
+  color: #fff;
+}
+.sideChat section .conversation:hover .convData h6{
+  color: #eee;
+  background: #aaa5;
+}
+
+.sideChat section .conversation:hover .convDate{
+  color: #eee8;
+}
+.sidePanelImg{
+  position: relative;
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+  object-fit: cover;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #fff5;
+}
+
+.convData{
+  margin-top: -20px;
+  width: 60%;
+  height: 60px;
+}
+.convData button{
+  font-size: 15px;
+}
+.convData h6{
+  font-size: 11px;
+  margin-top: -8px;
+  height: 30px;
+  width: 140px;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+
+.convDate{
+  padding: 0;
+  margin-top: 70px;
+  margin-left: -70px;
+  width: 90px;
+  height: 20px;
+  display: flex;
+  font-size: 12px;
+  color: #0008;
+}
+

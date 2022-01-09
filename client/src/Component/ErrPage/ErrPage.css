@@ -1,0 +1,20 @@
+.ErrPage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ErrPik{
+    height: 80%;
+    width: 80%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    object-fit: cover;
+}
+

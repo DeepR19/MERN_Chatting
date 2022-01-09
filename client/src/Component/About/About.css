@@ -1,0 +1,49 @@
+.about{
+    background: linear-gradient(to bottom left , #fff5, #4599d5cf);
+    height: 100vh;
+}
+#about{
+    height: 50vh;
+    width: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(to top left,#fff8, #0003, #fff8);
+    box-shadow:inset  2px 2px 5px #0005,
+    inset -2px -2px 5px #ccc;
+    z-index: 0;
+    box-shadow: 0px 2px 10px #0008;
+    text-shadow: 0px 1px 5px #000;
+    /* overflow: hidden; */
+}
+.about-name,
+.about-email,
+.about-number{
+    font-family: cursive;
+    color: #fff;
+    text-shadow: 1px 0 1px #0005;
+}
+@media(max-width: 2000px){
+    .about-name,
+    .about-email,
+    .about-number{
+        font-size: 30px;
+    }   
+}
+@media(max-width: 800px){
+    .about-name,
+    .about-email,
+    .about-number{
+        font-size: 2em;
+    }   
+    #about
+    {
+        height: 60vh;
+        width: 80vw;
+    }
+}

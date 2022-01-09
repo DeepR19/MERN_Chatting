@@ -1,0 +1,526 @@
+/* body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       overflow-x: hidden;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       min-height: 105vh;
+    } */
+    .cpage{
+        /* overflow: hidden; */
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       min-height: 175vh;
+       width: 100%;
+       /* background: red; */
+    }
+    .ContactPage h1{
+        position: absolute;
+        margin-top: -550px;
+        margin-left: -650px;
+        opacity: .2;
+        font-size: 8em;
+        /* z-index: 0; */
+    }
+    .ContactPage{ 
+       position: absolute;
+       top: 100px;
+        height: 80vh;
+        width: 80%;
+       /* backdrop-filter: blur(5px); */
+        display: flex;
+        /* background: red; */
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 5px 15px #0008;
+        transition: .5s;
+        overflow: visible;
+    }
+    .ContactPage .contactArea{
+        height: 100%;
+        width: 100%;
+        transition: .5s;
+        /* background: chartreuse; */
+    }
+    
+    .ContactPage .contactArea .contactInfo{
+        height: 60%;
+        width: 100%;
+        /* background: #f00; */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding-left: 20px;
+        transition: .5s;
+        color: #0009;
+    }
+    .contactInfo h2{
+      position: relative;
+        top: 20px;
+        margin-bottom: 20px;
+        font-size: 1.8em;
+        text-decoration: underline;
+        /* color: #027767; */
+        transition: .5s;
+    }
+    .contactInfo p{
+        position: relative;
+        margin-left: 20px;
+        max-width: 500px;
+        text-align: justify;
+    }
+    .contactInfo ul{
+        height: 100px;
+        width: 50%;
+        /* background: #000; */
+    }
+    .contactInfo ul li{
+        list-style: none;
+        display: flex;
+        margin: -8px 0;
+    }
+    .contactInfo ul li img{
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        margin: 5px 0;
+        border: 2px solid #000;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .ContactPage .contactArea .contactLink{
+        height: 40%;
+        width: 100%;
+        /* background: #2778ad; */
+        transition: .5s;
+        background: #2778ad;
+    }
+    .contactLink h2{
+        font-size: 2em;
+        margin-left: 50px;
+        color: #fff;
+        
+    }
+    .contactLink p{
+        font-size: 1.1em;
+        /* max-width: 800px; */
+        width: 600px;
+        height: 100px;
+        margin-left: 20px;
+        /* padding: 0 50px ; */
+        color: #fff9;
+    }
+    
+    .contactLink ul{
+        height: 100px;
+        width: 400px;
+        margin-left: 100px;
+        margin-top: -50px;
+        /* padding: 20px; */
+        /* background: darkgoldenrod; */
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .contactLink ul li{
+        list-style: none;
+        height: 45px;
+        width: 150px;
+        /* background: #fff; */
+        border-radius: 50px;
+        border: 5px solid #fff1;
+        box-shadow: 5px 5px 5px #0005,
+        -2px -2px 10px #fff4;
+        
+    }
+    .contactLink ul li a{
+        text-decoration: none;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff9;
+    }
+    .contactLink ul li:hover{
+        background: #fff3;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .contactForm{
+        position: absolute;
+        right: 2%;
+        border: 2px solid #fff8;
+        background: #fff;
+        border-radius: 10px;
+        height: 70%;
+        width: 35%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        box-shadow: 0 25px 45px #0008;
+        transition: .5s;
+    }
+    
+    .contactForm .contactDetails{
+        position: absolute;
+        box-shadow: none;
+        top: -30px;
+        background: transparent;
+        border: none;
+        width: 90%;
+        height: 96%;
+        overflow: visible;
+        z-index: 0;
+    }
+    .contactForm .contactDetails .row{
+        position: relative;
+        width: 100%;
+        display: grid;
+        padding-top: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    
+    .contactForm .contactDetails .row .col{
+        position: relative;
+        width: 100%;
+        padding: 0px 10px;
+        overflow: visible;
+        margin: 15px 0 15px;
+    }
+    .contactForm .contactDetails .row .col .inputBox{
+        position: relative;
+        overflow: visible;
+        width: 100%;
+        height: 40px;
+        color: #2778ad;
+        overflow: hidden;
+    }
+    .contactForm .contactDetails .row .col .inputBox textarea,
+    .contactForm .contactDetails .row .col .inputBox input{
+        position: absolute;
+        width: 100%;
+        min-height: 40px;
+        background: transparent;
+        box-shadow: none;
+        border: none;
+        outline: none;
+        font-size: 15px;
+        padding: 0 10px;
+        color: #fff;
+        z-index: 1;
+    
+    }
+    .contactForm .contactDetails .row .col .inputBox .text{
+    
+        position: absolute;
+        top: 0;
+        left: 0;
+        line-height: 40px;
+        color: #2778ad;
+        font-size: 18px;
+        padding: 0 10px;
+        display: block;
+        transition: .5s;
+        pointer-events: none;
+    }
+    .contactForm .contactDetails .row .col .inputBox input:focus + .text,
+    .contactForm .contactDetails .row .col .inputBox input:valid + .text,
+    .contactForm .contactDetails .row .col .inputBox textarea:focus + .text,
+    .contactForm .contactDetails .row .col .inputBox textarea:valid + .text
+    {
+        font-size: 14px;
+        top: -35px;
+        left: -10px;
+    
+    }
+    .contactForm .contactDetails .row .col .inputBox .line{
+        position: absolute;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #2778ad;
+        transition: 0.5s;
+        border-radius: 2px;
+        pointer-events: none;
+    }
+    .contactForm .contactDetails .row .col .inputBox input:focus ~ .line,
+    .contactForm .contactDetails .row .col .inputBox input:valid ~ .line
+    {
+        height: 100%;
+    }
+    .contactForm .contactDetails .row .col .inputBox.textarea
+    {
+        position: relative;
+        width: 100%;
+        height: 100px;
+        padding: 10px 0;
+    
+    }
+    .contactForm .contactDetails .row .col .inputBox textarea:focus ~ .line,
+    .contactForm .contactDetails .row .col .inputBox textarea:valid ~ .line
+    {
+        height: 100%;
+    }
+    
+    #messageSubmit
+    {
+        position: relative;
+        top: -20px ;
+        left: -15px;
+        border: none;
+        padding: 10px 40px;
+        cursor: pointer;
+        outline: none;
+        width: 20vw;
+        background: #2778ad;
+        color: #fff;
+        font-weight: 600;
+        font-size: 18px;
+        border-radius: 2px;
+        transition: .2s;
+        border-radius: 20px;
+        cursor: pointer;
+        z-index: 1;
+        /* box-shadow: 0 10px 25px #000; */
+        transition: .5s;
+    }
+    #messageSubmit:hover{
+        background: #376ac7;
+        transform: scale(.9)
+    }
+    #messageSubmit:active{
+      background: #83d8ff;
+        color: #2196f3;
+    }
+    
+    
+    
+    @media (max-width: 1400px)
+    {
+        .cpage{
+            overflow-y: scroll;
+        }
+        .ContactPage{
+            height: 80vh;
+            /* margin-top: 250px; */
+            /* top: 20%; */
+        }
+        .contactForm .contactDetails .row .col .inputBox input{
+            /* margin-left: 200px; */
+            width: 90%;
+            border-left: 10px solid #fff;
+        }
+        .ContactPage h1{
+            margin-top: -500px;
+            margin-left: -200px;
+        }
+        .ContactPage .contactArea {
+            /* background: maroon; */
+            height: 100%;
+            width: 100%;
+            /* background: red; */
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+        }
+        .ContactPage .contactArea .contactInfo{
+            height: 70%;
+            /* margin-top: 750px; */
+            /* margin-left: -190px; */
+            /* background: #fff0; */
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            /* margin-bottom: 100px; */
+            width: 100%;
+            background: #fff5;
+            margin-bottom: -3px;
+            border-bottom: 9px dotted #376ac7;
+            /* border: 2px solid #000; */
+            /* margin-bottom: 200px; */
+            /* background: rgba(250, 240, 230, 0.829); */
+        }
+        .ContactPage .contactArea .contactLink{
+            /* margin-top: -220px; */
+            height: 30%;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .ContactPage .contactArea .contactLink ul{
+           margin-right: 100px;
+            flex-direction: column;
+            height: 200px;
+        }
+    
+    .ContactPage .contactArea .contactLink ul li {
+        margin-bottom: 10px;
+    }
+    
+    .contactForm .contactDetails {
+        /* background: red; */
+        height: 55vh;
+        margin-top: 30px;
+    }
+    
+    
+    #messageSubmit{
+        left: 10px;
+    }
+    
+         .contactForm{
+            margin-top: 50px;
+            width:35%;
+            height: 75%;
+            box-shadow: 10px 20px 5px #0004;
+
+            /* background: red; */
+        }
+    }
+    
+    
+    
+    
+    
+    
+    @media (max-width: 980px)
+    {
+        body{
+            overflow-y: scroll;
+        }
+        .ContactPage {
+            /* top: -100px; */
+            height: 150vh;
+        }
+        .ContactPage .contactArea .contactInfo {
+            /* background: #fff; */
+            width: 100%;
+            height: 40%;
+            /* top: 400px; */
+            margin-top: 390px;
+            margin-bottom: -3px;
+            border-bottom: 9px dotted #376ac7
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+        }
+        .ContactPage h1{
+            font-size: 7em;
+            margin-top: -900px;
+            margin-left: 0px;
+        }
+        .ContactPage .contactArea .contactLink{
+            /* margin-top: -220px; */
+            height: 30%;
+           flex-direction: column;
+        }
+        .ContactPage .contactArea .contactLink p{
+          width: 500px;
+        }
+        .contactForm {
+            position: absolute;
+            top: 0;
+            left: 30%;
+            width: 50%;
+            height: 400px;
+            /* left: 20%; */
+       }
+    }
+    
+    
+    
+    
+    
+    @media (max-width: 720px){
+        .ContactPage h1{
+            font-size: 6em;
+            color: #000;
+            margin-left: 0;
+        }
+        .ContactPage{
+            /* margin-top: 150px; */
+            width: 90%;
+        }
+        .ContactPage .contactArea{
+            width: 100%;
+            /* background: #376ac7; */
+        }
+        .contactForm {
+            left: 15vw;
+            width: 400px;
+        }
+        #messageSubmit{
+            width: 300px;
+        }
+        /* .contactForm .contactDetails{ */
+            /* padding-left: 20px; */
+    /* width: 5%; */
+        
+       .ContactPage .contactArea .contactInfo {
+            background: #fff;
+            width: 96.5%;
+            height: 40%;
+            /* margin-top: 680px; */
+            /* background: #376ac7; */
+            margin-bottom: -3px;
+            border-bottom: 9px dotted #376ac7
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+        }
+    }
+    
+    
+    
+    
+    @media(max-width:552px){
+       
+        .ContactPage h1{
+            font-size: 4em;
+            margin-left: 0;
+        }
+       .ContactPage .contactArea .contactInfo {
+            width: 100%;
+            padding: 20px;
+            background: #fff6;
+        }
+       
+        
+        
+
+        .contactForm {
+            left: 0;
+            width: 87vw;
+            box-shadow: none;
+            background: #fff6;
+        }
+    }

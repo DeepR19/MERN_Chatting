@@ -1,0 +1,394 @@
+/* 
+
+body{
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    justify-content: center;
+    align-items: center;
+    min-height: 102vh;
+    background: linear-gradient(#fff,#51b8d8d5);
+    overflow-x: hidden
+} */
+.RegisterPage{
+    position: absolute;
+    top: 0%;
+    /* background: red; */
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    /* flex-direction: column; */
+    height: 100%;
+    width: 100%;
+    /* background: #ff5555; */
+}
+
+.RegisterPage::before{
+    content: '';
+    position: fixed;
+    top: 5%;
+    left: 8%;
+    height: 380px;
+    width: 380px;
+    background: linear-gradient(#379ad3c0,#fff);
+    border-radius: 50%;
+}
+.RegisterPage::after{
+    content: '';
+    position: fixed;
+    top: 60%;
+    left: 70%;
+    height: 350px;
+    width: 350px;
+    background: linear-gradient(to left bottom,#48a2d6c0,#fff);
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.regForm
+{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 80%;
+
+    margin-top: 40px;
+    z-index: 0;
+    transition: .5s;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    /* background: linen; */
+}
+
+.regForm h2{
+    position: absolute;
+    top: 0%;
+    /* left: 18%; */
+    font-size: 6em;
+    color: #0003;
+    pointer-events: none;
+    /* text-shadow: 1px 1px 1px #0003; */
+    /* stroke: 2px 2px #000; */
+}
+
+
+
+.signupForm{
+    position: relative;
+    /* margin-top: -60px; */
+    z-index: 1000;
+    height: 80%;
+    width: 100%;
+    max-width: 1000px;
+    padding :50px;
+    background: #0003;
+    box-shadow: 0 25px 45px #0005;
+    border: 1px solid #fff;
+    border-right: 1px solid #fff3;
+    border-bottom: 1px solid #fff2;
+    border-radius: 10px ;
+    overflow: hidden;
+    /* background: #089fbd80; */
+    backdrop-filter: blur(2px);
+}
+
+
+.signupForm:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -40%;
+    width: 100%;
+    height: 100%;
+    background: #fff2;
+    pointer-events: none;
+    transform: skewX(-15deg);
+}
+.signupForm h2{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.signupForm .row100{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+
+.signupForm .row100 .col{
+    position: relative;
+    width: 100%;
+    padding: 0  10px;
+    margin: 30px 0 10px;
+    /* border: 1px solid #000; */
+}
+.signupForm .row100 .col .inputBox{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: #0007;
+    /* padding:0 10px ; */
+    /* border: 1px solid #ff0; */
+}
+
+.signupForm .row100 .col .inputBox input{
+    position: absolute;
+    width: 88%;
+    height: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding: 0 10px;
+    z-index: 1;
+
+}
+.signupForm .row100 .col .inputBox .text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 40px;
+    /* margin: 0 20px; */
+    font-size: 18px;
+    padding: 0 10px;
+    display: block;
+    transition: .5s;
+    pointer-events: none;
+}
+.signupForm .row100 .col .inputBox input:focus + .text,
+.signupForm .row100 .col .inputBox input:valid + .text,
+.signupForm .row100 .col .inputBox textarea:focus + .text,
+.signupForm .row100 .col .inputBox textarea:valid + .text
+{
+    font-size: 14px;
+    top: -35px;
+    left: -10px;
+    color: #e91e62ce;
+}
+.signupForm .row100 .col .inputBox  .line{
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 95%;
+    height: 2px;
+    background: #fff8;
+    transition: 0.5s;
+    border-radius: 2px;
+    pointer-events: none;
+}
+.signupForm .row100 .col .inputBox input:focus ~ .line,
+.signupForm .row100 .col .inputBox input:valid ~ .line
+{
+    height: 100%;
+}
+.signupForm .row100 .col .inputBox.textarea
+{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding: 10px 0;
+
+}
+.signupForm .row100 .col .inputBox textarea:focus ~ .line,
+.signupForm .row100 .col .inputBox textarea:valid ~ .line
+{
+    height: 100%;
+}
+
+#submit
+{
+    border: none;
+    padding: 10px 40px;
+    cursor: pointer;
+    outline: none;
+    /* background: #83d8ff;
+    color: #2196f3; */
+    background: #e91e62ce;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 2px;
+    transition: .1s;
+}
+#submit:active{
+  background: #83d8ff;
+    color: #2196f3;
+}
+
+.signupForm p{
+    color: #0009;
+    margin-top: 5vh;
+    /* margin-left: 2vw; */
+}
+.signupForm p .signLink{
+    color: #e91e62ce;
+    font-weight: 800;
+    /* text-decoration: none; */
+    font-size: 1.1em;
+}
+
+@media (max-width: 1450px)
+{
+   
+    .reg.signupForm{
+        width: 80%;
+    }
+    .regImg{
+        margin-top: 250px;
+        width: 50%;
+        height: 120%;
+    }
+}
+
+@media(max-width:1280px){
+    .reg.signupForm h2{
+        font-size: 5em;
+    }
+    .regImg {
+        margin-top: 200px;
+        margin-left: 14vh;
+        height: 125%;
+        /* width: 0%; */
+    }
+    
+}
+@media(max-width:1100px){
+    
+    .regForm h2{
+        font-size: 4em;
+        /* border: 2px solid #000; */
+        width: 150%;
+        left: 15%;
+        top: 10%;
+    }
+    .regForm{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        /* margin-left: -20%; */
+        /* background: #2196f3; */
+    }
+   
+   
+    .regForm .signupForm{
+        backdrop-filter: blur(3px);
+    }
+    .regImg {
+        position: absolute;
+        width: 0%;
+        height: 70%;
+        margin-top: 40px;
+    }
+    .signupForm {
+        left: 0%;
+        width: 80%
+    }
+    /* .signupForm .row100 .col .inputBox .text{
+        color: #0730e9a4;
+        font-weight: bolder;
+    } */
+    /* .signupForm .row100 .col .inputBox input {
+        /* color: #0731e9; 
+        color: #089fbd;
+    }
+
+    .signupForm .row100 .col .inputBox  .line{
+       background: #8fd9ec9f;
+    } */
+    .signupForm .row100 .col .inputBox textarea:focus ~ .line,
+    .signupForm .row100 .col .inputBox textarea:valid ~ .line
+    {
+        background: #fff; 
+        height: 100%;
+    }
+    .signupForm p{
+        color: #000;
+    }
+}
+
+
+
+
+@media(max-width: 750px)
+{
+   
+    
+    .regForm h2{
+        font-size: 4em;
+        /* border: 2px #d00 solid; */
+        margin-left: -10%;
+        width: 150%;
+    }
+    .regForm{
+        /* margin-left: -20%; */
+        width: 90%;
+       
+        flex-direction: column;
+    }
+    .regImg {
+        background: #fff2;
+        width: 0;
+        margin-left: -0%;
+    }
+    .signupForm{
+        /* top: 15%; */
+        width: 98%;
+        background: #0001;
+    }
+    .signupForm:before{
+       
+        background: #fff6;
+        
+    }
+    .signupForm .row100 .col .inputBox .text{
+        color: #222324a4;
+        font-weight: bolder;
+    } 
+    .signupForm .row100 .col .inputBox  .line{
+       background: #0002;
+    } 
+    .signupForm .row100 .col .inputBox textarea:focus ~ .line,
+    .signupForm .row100 .col .inputBox textarea:valid ~ .line
+    {
+        background: #fff; 
+        height: 100%;
+    }
+    .signupForm .row100 .col .inputBox input:focus + .text,
+    .signupForm .row100 .col .inputBox input:valid + .text,
+    .signupForm .row100 .col .inputBox textarea:focus + .text,
+    .signupForm .row100 .col .inputBox textarea:valid + .text
+    {
+        color: red;
+
+    }
+}
+@media(max-width:652px)
+{
+    body{
+        min-height: 120vh;
+        overflow: visible;
+    }
+    .regForm h2{
+        font-size: 3em;
+        /* border: 2px #d00 solid; */
+        margin-left: -5%;
+        width: 150%;
+    }
+     .regForm{
+        /* margin-left: -30%; */
+        width: 90%;
+        flex-direction: column;
+    }
+    .signupForm{
+        top: 15%;
+        width: 98%;
+        background: #0001;
+    }
+}
