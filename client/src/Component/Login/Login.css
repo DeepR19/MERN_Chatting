@@ -152,7 +152,7 @@ form .row100 .col .inputBox{
     width: 100%;
     height: 40px;
 overflow: visible;
-    color: #fff;
+    color: #000;
 }
 form .row100 .col .inputBox textarea,
 form .row100 .col .inputBox input{

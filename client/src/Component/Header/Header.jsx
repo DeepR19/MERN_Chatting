@@ -96,14 +96,14 @@ const Header =() => {
                 </ul>
 
 
-                <ul className="sci">
+                {/* <ul className="sci">
                    
                        <li> <Link href='https://github.com/deepr19' >
                                 <img title="github" src={Github} alt="linkedin"/>
                             
                         </Link></li>
 
-                </ul>
+                </ul> */}
             </div>
         </>
     )

@@ -75,7 +75,7 @@ const Options = () => {
 
   const done =()=>{
     message.success("Code copied successfully!");
-    console.log('done');
+    console.log(me);
   }
   return (
     <>
